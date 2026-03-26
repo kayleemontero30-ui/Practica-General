@@ -3,6 +3,8 @@
 # Implementar funciones para realizar preorden, inorden, y postorden.
 # Ejecuta varios ejemplos con árboles distintos y mide el tiempo que tardan con time.time()
 
+
+#SOLO PARA MI NOOOOO ENTREGUES
 class Nodo:
     def __init__(self, value):
         self.valor = value
@@ -10,12 +12,13 @@ class Nodo:
         self.middle = None
         self.right = None
         
+def print_three(nodo, level=0):
+    if nodo is not None:
+        print_three(nodo.right, level + 1)
+        print(' ' * 8 * level + '-'  *4 + '>' + str(nodo.valor))
+        print_three(nodo.left, level + 1)
+        print_three(nodo.middle, level + 1) 
 
-#def print_three(nodo, level=0):
- #   if nodo is not None:
-  #      print_three(nodo.right, level + 1)
-   #     print(' ' * 8 * level + '-'  *4 + '>' + str(nodo.valor))
-    #    print_three(nodo.left, level + 1) 
 
 
 def recorrido_inorder(nodo):
@@ -55,7 +58,6 @@ raiz.right.left = Nodo(11)
 raiz.right.middle = Nodo(12)
 raiz.right.right = Nodo(13)
 
-
 print("Inorder:")
 recorrido_inorder(raiz)
 
@@ -64,3 +66,6 @@ recorrido_preorder(raiz)
 
 print("Postorder:")
 recorrido_postorder(raiz)
+
+print("Arbol Visual:")
+print_three(raiz)

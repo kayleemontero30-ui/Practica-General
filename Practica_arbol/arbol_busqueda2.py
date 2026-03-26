@@ -58,3 +58,6 @@ recorrido_postorden(raiz)
 
 print("Inorder:")
 recorrido_inorden(raiz)
+
+print("Arbol Visual:")
+print_three(raiz)
