@@ -70,12 +70,12 @@ tabla.insert("Juan Pablo Duarte", {"edad": 30, "nota": 85})
 tabla.insert("Beyonce", {"edad": 25, "nota": 92})
 tabla.insert("Bad Bunny", {"edad": 40, "nota": 25})
 tabla.insert("Shakira", {"edad": 35, "nota": 78})
-tabla.insert("Fausto", {"edad": 28, "nota": 90})
+tabla.insert("Fausto", {"edad": 99, "nota": -15})
 
 
 while True:
     print()
-    print("MINI SISTEMA HASH")
+    print("$$$~~~MINI SISTEMA HASH~~~<3")
     print("1. Insertar")
     print("2. Buscar")
     print("3. Mostrar tabla")
